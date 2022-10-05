@@ -1,21 +1,22 @@
 package ca.vanier;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
 
 public class ScoreTest 
 {
+    Scores scores = new Scores();
+
     @Test
     public void shouldAnswerWithTrue()
     {
         String args = "7";
-        boolean answer = Scores.result(args);
+        boolean answer = scores.result(args);
         assertNotNull(answer);
-        assertTrue(message:"Checking if scores grater than 6", anser == true);
+        assertTrue(answer);
         
     }
 }
